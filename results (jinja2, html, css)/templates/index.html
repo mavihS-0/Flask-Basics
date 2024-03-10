@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}" />
+    <title>HTML and POST</title>
+  </head>
+  <body>
+    <form action="/submit" method="post">
+      <label for="maths">Maths:</label>
+      <input
+        type="text"
+        name="maths"
+        id="maths"
+        placeholder="Enter Maths Marks"
+      /><br />
+      <label for="science">Science:</label>
+      <input
+        type="text"
+        name="science"
+        id="science"
+        placeholder="Enter Science Marks"
+      /><br />
+      <label for="english">English:</label>
+      <input
+        type="text"
+        name="english"
+        id="english"
+        placeholder="Enter English Marks"
+      /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
